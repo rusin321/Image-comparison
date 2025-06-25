@@ -62,7 +62,7 @@ for i in range(DVD_directory_len):
 	DVD = torch.from_numpy(np.array([np.transpose(DVD)])).cuda()
 	
 	#Determining indices
-	Blu_Ray_index = round(i*10*0.8)
+	Blu_Ray_index = round(i*0.8)
 	
 	if Blu_Ray_index > Blu_Ray_directory_len-1:
 		Blu_Ray_index = Blu_Ray_directory_len-1
